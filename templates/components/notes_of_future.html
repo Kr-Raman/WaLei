@@ -1,0 +1,13 @@
+<div></div>
+<div class="container mt-5">
+    <div class="row d-flex flex-row justify-content-start"> 
+    <!-- <div class="row d-flex justify-content-start">  -->
+        {% for note in notes %}
+            <div class='col-ms-2 col-lg-4 col mt-3' hx-target="#note-details" hx-swap="innerHTML">
+            <!-- <div class='d-flex justify-content-start align-items-center' hx-target="#note-details" hx-swap="innerHTML"> -->
+                {% include 'components/square_tile.html' %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

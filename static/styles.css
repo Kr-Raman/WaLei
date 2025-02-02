@@ -1,0 +1,8 @@
+.nav-item .custom-color {
+    color:  rgb(147, 147, 147) !important;  /* Default color */
+    text-decoration: none; /* Optional: Remove underline */
+  }
+  
+  .nav-item .custom-color:hover {
+color: white !important; /* Color on hover */
+}

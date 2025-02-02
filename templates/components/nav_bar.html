@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light  border-bottom" style="background-color: #29253A; color: white;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/home" style="color: white " hx-get="/home_page"  hx-target="#content"
+            hx-swap="innerHTML">
+            <img src="/static/images/logo-small.PNG" alt="" width="30" height="24"
+                class="d-inline-block align-text-top">
+            WaLei
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class=" nav-link active custom-color " href="/notes_of_future" hx-get="/notes_of_future_page" hx-trigger="click"
+                        hx-target="#content" hx-swap="innerHTML"><i class="fa-solid fa-book"></i> NOTES OF FUTURE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-color" style="color: white ">PUBLISH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-color" style="color: white ">ABOUT US</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link custom-color" style="color: white;">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-color" style="color: white;">SIGN UP</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
