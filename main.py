@@ -2,8 +2,6 @@ from fastapi import FastAPI,Request, Form, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
-
-from passlib.hash import bcrypt
 from pymongo import MongoClient
 from pydantic import BaseModel
 
