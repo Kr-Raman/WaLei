@@ -39,7 +39,18 @@ async def serve_home(request:Request):
 @app.get("/notes_of_future_page/",response_class=HTMLResponse)
 async def new_page(request: Request):
 
-    return templates.TemplateResponse("components/notes_of_future.html", {"request": request, "notes": fetch_future_notes()})
+    # return templates.TemplateResponse("components/notes_of_future.html", {"request": request, "notes": fetch_future_notes()})
+    return templates.TemplateResponse("components/notes_of_future.html", {"request": request})
+
+@app.get("/publish_info/",response_class=HTMLResponse)
+async def new_page(request: Request):
+
+    return templates.TemplateResponse("components/publish_information.html", {"request": request})
+
+@app.get("/about_us/",response_class=HTMLResponse)
+async def new_page(request: Request):
+
+    return templates.TemplateResponse("components/about_us.html", {"request": request})
 
 # @app.post("/signup/")
 # async def signup(username: str = Form(...), password: str = Form(...)):
