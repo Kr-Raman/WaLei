@@ -16,7 +16,7 @@ class NotesOfFuture(BaseModel):
 # Initialize FastAPI and MongoDB
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
-# components = Jinja2Templates(directory="templates/components")
+
 app.mount(
     "/static", StaticFiles(directory="static"), name="static")
 connection_string:str = "mongodb+srv://admin:thesisadmin@thesiscluster.056da.mongodb.net/"
