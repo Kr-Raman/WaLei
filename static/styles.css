@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+*{
+    font-family: 'Crimson Text', serif;
+}
+
 .nav-item .custom-color {
     color:  rgb(147, 147, 147) !important;  /* Default color */
     text-decoration: none; /* Optional: Remove underline */
   }
   
-  .nav-item .custom-color:hover {
+.nav-item .custom-color:hover {
 color: white !important; /* Color on hover */
 }
+
